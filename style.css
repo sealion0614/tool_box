@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: #839b5c;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#todo-app{
+    background-color: #cee4ae;
+    color: black;
+}
+#countdown-app{
+    background-color: #cee4ae;
+    color: black;
+}
+#stopwatch-app{
+    background-color: #cee4ae;
+    color: black;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+}
+#countdown-display,
+#stopwatch-display{
+    font-weight: bold;
+    margin-bottom: 25px;
+    background-color: #a8c97f;
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+input,button{
+    border:none;
+}
+input:focus,textarea:focus{
+    outline:none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>工具箱</title>
+</head>
+<body>
+    <section id="todo-app">
+        <h2>Todo List</h2>
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="What needs to be done?">
+            <button id="add-todo-btn" >Add Task</button>
+        </div>
+        <div id="text"></div>
+        <ul id="todo-list">
+            </ul>
+    </section>
+
+    <hr>
+
+    <section id="countdown-app">
+        <h2>Timer</h2>
+        <div class="input-container">
+            <input type="number" id="seconds-input" placeholder="Enter seconds">
+            <button id="start-countdown">Start</button>
+            <button id="pause-countdown">Pause</button>
+            <button id="reset-countdown">Reset</button>
+        </div>
+        <div id="countdown-display" style="font-size: 2rem; font-weight: bold;"></div>
+    </section>
+
+    <hr>
+
+    <section id="stopwatch-app">
+        <h2>Stopwatch</h2>
+        <div id="stopwatch-display" style="font-size: 2rem; font-weight: bold;"></div>
+        <div class="controls">
+            <button id="sw-start">Start</button>
+            <button id="sw-pause">Pause</button>
+            <button id="sw-reset">Reset</button>
+        </div>
+        <ul id="lap-times">
+            </ul>
+    </section>
+    <audio display="none" id="count_sound" src="count.m4a"></audio>
+    <audio display="none" id="timesup_sound" src="timesup.m4a"></audio>
+</body>
+<script src="todo.js"></script>
+<script src="timer.js"></script>
+<script src="stopwatch.js"></script>
+</html>
