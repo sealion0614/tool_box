@@ -1,16 +1,19 @@
 body{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
 }
 section{
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
 }
 button{
+    border:none;
     background-color: #839b5c;
     margin-left: 2px;
     margin-right: 2px;
@@ -43,9 +46,6 @@ button{
     padding: 15px 40px;
     border-radius: 15px;
 }
-input,button{
-    border:none;
-}
-input:focus,textarea:focus{
-    outline:none;
+hr{
+    display:none;
 }
